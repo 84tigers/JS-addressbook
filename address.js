@@ -1,5 +1,7 @@
 "use strict";
 
+
+
 // constructs AddressBook class and methods
 class AddressBook {
     constructor () {
@@ -8,14 +10,21 @@ class AddressBook {
     add() {
     // add method
     }
-    print() {
-    // print to console method
+    print() {   
+        for (let i = 0; i < AddressBook.length; i++ );//not working per usual
+        console.log(this.contacts[i]);// print to console method
     }
     deleteAt() {
-    // delete method
+        // itemList.splice(itemList.indexOf(name) , 1);
+        // for (let i = 0; i < ItemList.length; i++) {
+        //     if (name === itemList[i].name) {
+        //         itemList.splice(i, 1);
+        //     }
+        // }
+        
     }
 };
-// creates Contacts class and data
+// creates Contacts class and properties/data?
 class Contacts {
     constructor(name, email, phone, relation) {
     this.name = name;
@@ -39,11 +48,11 @@ while (true) {
         break;
 
     } else if (choice === "print") {
-        addressBook.Book.print(); {
-            for (let contact of this.contacts) {
-                console.log(contact);
-            }
-        }
+        addressBook.print(); 
+            // for (let contact of this.contact) {
+            //     console.log(contact);
+            // }
+        
     }
 };
 
@@ -79,11 +88,11 @@ while (true) {
 
 // function removeItem(name) {
 //     itemList.splice(itemList.indexOf(name) , 1);
-    // for (let i = 0; i < DataTransferItemList.length; i++) {
-    //     if (name === itemList[i].name) {
-    //         itemList.splice(i, 1);
-    //     }
-    // }
+//     for (let i = 0; i < ItemList.length; i++) {
+//         if (name === itemList[i].name) {
+//             itemList.splice(i, 1);
+//         }
+//     }
 // }
 
 // class Student {
