@@ -10,9 +10,9 @@ class AddressBook {
     add() {
     // add method
     }
-    print() {   
-        for (let i = 0; i < AddressBook.length; i++ );//not working per usual
-        console.log(this.contacts[i]);// print to console method
+    print() {
+        for (let contacts of this.contacts);
+        console.log(contacts);
     }
     deleteAt() {
         // itemList.splice(itemList.indexOf(name) , 1);
@@ -48,11 +48,9 @@ while (true) {
         break;
 
     } else if (choice === "print") {
-        addressBook.print(); 
-            // for (let contact of this.contact) {
-            //     console.log(contact);
-            // }
-        
+        addressBook.print(); {
+            
+        }
     }
 };
 
